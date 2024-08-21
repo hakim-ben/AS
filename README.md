@@ -2,14 +2,24 @@
 
 [![Join us on Slack!](https://img.shields.io/badge/chat-on%20Slack-e01563.svg)](https://join.slack.com/t/nanvix/shared_invite/zt-1yu30bs28-nsNmw8IwCyh6MBBV~B~X7w)
 
-This repository hosts of Nanvix, a research operating system.
+## What Is Nanvix?
 
-## Usage Statement
+> This repository hosts the educational version of Nanvix.
 
-This project is a prototype. As such, we provide no guarantees that it will work and you are assuming any risks with using the code. We welcome comments and feedback. Please send any questions or comments to any [maintainer of the project](https://github.com/orgs/nanvix/people).
+Nanvix is a Unix-like operating system written by [Pedro Henrique
+Penna](https://github.com/ppenna) for educational purposes. It is designed to be
+simple and small, but also modern and fully featured.
 
-> By sending feedback, you are consenting that it may be used in the further development of this project.
+## What Hardware Is Required?
 
-## License
+Nanvix targets 32-bit x86-based PCs and only requires a floppy or
+CD-ROM drive and 16 MB of RAM. You can run it either in a real PC
+or in a virtual machine, using a system image.
 
-This project is distributed under the [MIT License](LICENSE.txt).
+
+
+## License and Maintainers
+
+Nanvix is a free software that is under the GPL V3 license and is
+maintained by Pedro Henrique Penna. Any questions or suggestions send him an
+email: <pedrohenriquepenna@gmail.com>
