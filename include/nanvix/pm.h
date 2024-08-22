@@ -36,6 +36,17 @@
 	#include <sys/types.h>
 	#include <limits.h>
 	#include <signal.h>
+ 
+     /// @brief Type d'ordonnanceur 
+     typedef enum
+    {
+    	SCHED_FIFO,
+    	SCHED_ROUND_ROBIN,
+    	SCHED_PRIORITY,    // Ajout du type d'ordonnanceur par priorité
+    	SCHED_RANDOM,
+    	SCHED_LOTTERY,
+		SCHED_SJF
+	} sched_type_t; 
 
 	/**
 	 * @name Superuser credentials
