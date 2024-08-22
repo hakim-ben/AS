@@ -34,7 +34,7 @@
 00000000000i[IMG   ] Disk image modules
 00000000000i[IMG   ]   flat concat sparse dll growing undoable volatile vmware3
 00000000000i[IMG   ]   vmware4 vbox vpc vvfat
-00000000000i[MEM0  ] allocated memory at 0x7b6f76fdd010. after alignment, vector=0x7b6f76fde000
+00000000000i[MEM0  ] allocated memory at 0x7a609d3dd010. after alignment, vector=0x7a609d3de000
 00000000000i[MEM0  ] 16,00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=128
 00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('/home/info4/INFO4/AS/toolchain/bochs/share/bochs/BIOS-bochs-latest')
@@ -45,7 +45,7 @@
 00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS  ] Using local time for initial clock
-00000000000i[CMOS  ] Setting initial clock to: Thu Aug 22 05:50:12 2024 (time0=1724298612)
+00000000000i[CMOS  ] Setting initial clock to: Thu Aug 22 15:24:41 2024 (time0=1724333081)
 00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA   ] channel 4 used by cascade
 00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -216,55 +216,26 @@
 00014295629i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=81
 00014299300i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=81
 00014302969i[BIOS  ] *** int 15h function AX=00c0, BX=0000 not yet supported!
-00019635158i[HD    ] disk ata1-0 not present, aborting
-518427980000i[KBD   ] internal keyboard buffer full, ignoring scancode.(2d)
-518427980000i[KBD   ] internal keyboard buffer full, ignoring scancode.(ad)
-518427980000i[KBD   ] internal keyboard buffer full, ignoring scancode.(9d)
-518475644000i[KBD   ] internal keyboard buffer full, ignoring scancode.(1d)
-518475644000i[KBD   ] internal keyboard buffer full, ignoring scancode.(2e)
-518475644000i[KBD   ] internal keyboard buffer full, ignoring scancode.(ae)
-518475644000i[KBD   ] internal keyboard buffer full, ignoring scancode.(9d)
-518544768000i[KBD   ] internal keyboard buffer full, ignoring scancode.(1d)
-518544768000i[KBD   ] internal keyboard buffer full, ignoring scancode.(2f)
-518544768000i[KBD   ] internal keyboard buffer full, ignoring scancode.(af)
-518544768000i[KBD   ] internal keyboard buffer full, ignoring scancode.(9d)
-518607248000i[KBD   ] internal keyboard buffer full, ignoring scancode.(20)
-518607248000i[KBD   ] internal keyboard buffer full, ignoring scancode.(a0)
-518654408000i[KBD   ] internal keyboard buffer full, ignoring scancode.(20)
-518654408000i[KBD   ] internal keyboard buffer full, ignoring scancode.(a0)
-518689828000i[KBD   ] internal keyboard buffer full, ignoring scancode.(22)
-518689828000i[KBD   ] internal keyboard buffer full, ignoring scancode.(a2)
-519153136000i[KBD   ] internal keyboard buffer full, ignoring scancode.(2a)
-519153136000i[KBD   ] internal keyboard buffer full, ignoring scancode.(38)
-519153136000i[KBD   ] internal keyboard buffer full, ignoring scancode.(40)
-519153136000i[KBD   ] internal keyboard buffer full, ignoring scancode.(c0)
-519153136000i[KBD   ] internal keyboard buffer full, ignoring scancode.(b8)
-519153136000i[KBD   ] internal keyboard buffer full, ignoring scancode.(aa)
-519840212000i[KBD   ] internal keyboard buffer full, ignoring scancode.(2a)
-519840212000i[KBD   ] internal keyboard buffer full, ignoring scancode.(38)
-519840212000i[KBD   ] internal keyboard buffer full, ignoring scancode.(40)
-519840212000i[KBD   ] internal keyboard buffer full, ignoring scancode.(c0)
-519840212000i[KBD   ] internal keyboard buffer full, ignoring scancode.(b8)
-519840212000i[KBD   ] internal keyboard buffer full, ignoring scancode.(aa)
-520281810402p[TERM  ] >>PANIC<< Received SIGHUP: quit simulation
-520281810402i[CPU0  ] CPU is in protected mode (active)
-520281810402i[CPU0  ] CS.mode = 32 bit
-520281810402i[CPU0  ] SS.mode = 32 bit
-520281810402i[CPU0  ] EFER   = 0x00000000
-520281810402i[CPU0  ] | EAX=00000016  EBX=c0144c80  ECX=000b8f28  EDX=00000000
-520281810402i[CPU0  ] | ESP=c040db3c  EBP=c040df54  ESI=c0114828  EDI=c0401fbc
-520281810402i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df if tf SF zf af PF cf
-520281810402i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
-520281810402i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
-520281810402i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-520281810402i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-520281810402i[CPU0  ] |  ES:0000( 0002| 0|  0) 00000000 ffffffff 1 1
-520281810402i[CPU0  ] |  FS:0000( 0002| 0|  0) 00000000 ffffffff 1 1
-520281810402i[CPU0  ] |  GS:0000( 0002| 0|  0) 00000000 ffffffff 1 1
-520281810402i[CPU0  ] | EIP=c010d2f6 (c010d2f6)
-520281810402i[CPU0  ] | CR0=0xe0000011 CR2=0xa0000004
-520281810402i[CPU0  ] | CR3=0x0040c000 CR4=0x00000000
-520281810402i[CPU0  ] 0xc010d2f6>> jmp .-3 (0xc010d2f5) : EBFD
-520281810402i[CMOS  ] Last time is 1724428682 (Fri Aug 23 17:58:02 2024)
-520281810402i[      ] restoring default signal behavior
-520281810402i[SIM   ] quit_sim called with exit code 1
+00019635189i[HD    ] disk ata1-0 not present, aborting
+01732844044p[TERM  ] >>PANIC<< Received SIGHUP: quit simulation
+01732844044i[CPU0  ] CPU is in protected mode (active)
+01732844044i[CPU0  ] CS.mode = 32 bit
+01732844044i[CPU0  ] SS.mode = 32 bit
+01732844044i[CPU0  ] EFER   = 0x00000000
+01732844044i[CPU0  ] | EAX=c014bb20  EBX=001cd007  ECX=c01446e0  EDX=c01180b8
+01732844044i[CPU0  ] | ESP=c014469c  EBP=c01446b4  ESI=0002bab0  EDI=00100ffc
+01732844044i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf SF zf af pf CF
+01732844044i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+01732844044i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+01732844044i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01732844044i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01732844044i[CPU0  ] |  ES:0000( 0002| 0|  0) 00000000 ffffffff 1 1
+01732844044i[CPU0  ] |  FS:0000( 0002| 0|  0) 00000000 ffffffff 1 1
+01732844044i[CPU0  ] |  GS:0000( 0002| 0|  0) 00000000 ffffffff 1 1
+01732844044i[CPU0  ] | EIP=c0110322 (c011031c)
+01732844044i[CPU0  ] | CR0=0xe0000011 CR2=0xa0003004
+01732844044i[CPU0  ] | CR3=0x00104000 CR4=0x00000000
+01732844044i[CPU0  ] 0xc011031c>> mov eax, dword ptr ds:[eax+452] : 8B80C4010000
+01732844044i[CMOS  ] Last time is 1724333514 (Thu Aug 22 15:31:54 2024)
+01732844044i[      ] restoring default signal behavior
+01732844044i[SIM   ] quit_sim called with exit code 1
